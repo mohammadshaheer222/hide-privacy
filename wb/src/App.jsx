@@ -54,3 +54,51 @@ function App() {
 }
 
 export default App;
+
+
+
+
+// import { useState, useEffect } from "react";
+
+// function App() {
+//   const [showFooter, setShowFooter] = useState(false);
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const scrollTop = window.scrollY;
+//       const windowHeight = window.innerHeight;
+//       const fullHeight = document.documentElement.scrollHeight - windowHeight;
+
+//       // Show the footer after the user has scrolled 50% of the total scrollable height
+//       if (scrollTop / fullHeight >= 0.5) {
+//         setShowFooter(true);
+//       } else {
+//         setShowFooter(false);
+//       }
+//     };
+
+//     window.addEventListener("scroll", handleScroll);
+//     return () => window.removeEventListener("scroll", handleScroll);
+//   }, []);
+
+//   return (
+//     <>
+//       <div className="h-screen bg-yellow-500">section 1</div>
+//       <div className="h-screen bg-red-500">section 2</div>
+//       <div className="h-screen bg-blue-500">section 3</div>
+
+//       {/* Conditionally render the footer based on the scroll position */}
+//       {showFooter && (
+//         <div className="bg-black w-full h-24 fixed bottom-0 left-0 right-0">
+//           <p className="text-white">
+//             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+//             Consectetur assumenda praesentium provident distinctio. Odio id
+//             dolorem repellendus, harum cupiditate repudiandae.
+//           </p>
+//         </div>
+//       )}
+//     </>
+//   );
+// }
+
+// export default App;
